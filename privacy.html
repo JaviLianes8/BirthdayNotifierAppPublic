@@ -3,36 +3,64 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Privacy Policy</title>
+    <title>Privacy Policy – Birthday Notifier</title>
+    <style>
+        body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:860px;margin:40px auto;padding:0 16px;line-height:1.55;color:#222}
+        h1,h2,h3{line-height:1.25}
+        code{background:#f6f8fa;border:1px solid #eaecef;border-radius:6px;padding:.15em .35em}
+    </style>
 </head>
 <body>
+
 <h1>Privacy Policy</h1>
-<p><strong>Confetii 🎉</strong> does not collect, store, or share any personal data.</p>
+<p><strong>Birthday Notifier</strong> respects your privacy. We do not sell or share personal data with third parties beyond the services required to run the app (Google/Firebase).</p>
 
-<h2>Google Sign-In</h2>
-<p>If you choose to sign in with Google, your authentication is handled securely via Firebase. We do not access or store your credentials.</p>
+<h2>Google Sign-In (OAuth)</h2>
+<p>If you sign in, authentication is handled securely via <strong>Google Sign-In (OAuth 2.0)</strong> and Firebase. We do not access or store your credentials.</p>
 
-<h2>Local Storage</h2>
-<p>Your birthday data is stored only on your device unless you choose to sync with cloud storage (Google Drive or Firebase). No data is shared automatically.</p>
+<h2>Data We Handle</h2>
+<ul>
+    <li><strong>Account</strong>: your Google user ID/email (to identify your private cloud space).</li>
+    <li><strong>User content</strong>: your birthday list stored in a <code>birthdays.json</code> file (name, date, phone, contact method).</li>
+    <li><strong>App settings</strong>: local preferences (notification time, filters). These are not shared.</li>
+</ul>
+
+<h2>Storage & Sync</h2>
+<p>Your birthdays are saved locally on your device. If you enable cloud sync, your <code>birthdays.json</code> is stored in Firebase Storage linked to your Google account. All transfers are <strong>encrypted in transit</strong> (HTTPS/TLS).</p>
 
 <h2>Permissions</h2>
-<p>The app may request access to your storage for reading/writing JSON files and to send notifications. These permissions are only used for app functionality.</p>
-
-<h2>Access to Contacts</h2>
-<p>
-    If you grant the app access to your contacts, we only use it to help you select or autocomplete names when creating birthday entries. No contact data is collected, uploaded, or shared. This access is optional and only used locally on your device.
-</p>
-
-<h2>Contact</h2>
-<p>If you have questions, you can reach the developer at <a href="mailto:jlianesglr@gmail.com">jlianesglr@gmail.com</a>.</p>
+<ul>
+    <li><strong>Storage</strong>: read/write the JSON file.</li>
+    <li><strong>Notifications</strong>: remind you about birthdays.</li>
+    <li><strong>Contacts (optional)</strong>: used only on-device to autocomplete names. No contact data is uploaded.</li>
+</ul>
 
 <h2 id="delete-account">Account & Data Deletion</h2>
-<p>
-    If you want your data removed from cloud storage, send an email to
-    <a href="mailto:jlianesglr@gmail.com">jlianesglr@gmail.com</a> with the subject "Delete My Confetii Data".
-    We will delete all associated cloud data (if any) within 48 hours. Data stored locally on your device can be removed by uninstalling the app.
-</p>
+<p>You can delete your cloud data at any time <strong>from inside the app</strong>:</p>
+<ol>
+    <li>Open <em>Settings</em> → <em>Delete Data</em>.</li>
+    <li>Confirm the action. The app will permanently delete your <code>birthdays.json</code> from Firebase Storage.</li>
+</ol>
 
-<p>Last updated: August 1, 2025</p>
+<h3>What is deleted</h3>
+<ul>
+    <li>Your <code>birthdays.json</code> stored in Firebase (all birthdays and related sync preferences).</li>
+</ul>
+
+<h3>What may be retained</h3>
+<ul>
+    <li>Minimal request metadata (request email and timestamp) may be kept for operational/legal reasons for up to <strong>90 days</strong>, then purged.</li>
+</ul>
+
+<h3>Timeline</h3>
+<p>In-app deletions are processed immediately. If you need assistance, contact us and we will handle it within 7 calendar days.</p>
+
+<h2>Delete Data without Deleting Your Google Account</h2>
+<p>Deleting your Birthday Notifier data does not affect your Google account. You can continue using Google Sign-In later and start fresh.</p>
+
+<h2>Contact</h2>
+<p>Questions? Email <a href="mailto:jlianesglr@gmail.com">jlianesglr@gmail.com</a>.</p>
+
+<p>Last updated: August 17, 2025</p>
 </body>
 </html>
